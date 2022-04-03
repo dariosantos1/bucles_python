@@ -35,3 +35,37 @@ alguno de lo soportados o no es la palabra "FIN".
 
 print("Mi Calculadora (^_^)")
 # Empezar aquí la resolución del ejercicio
+numero_1 = int(input("Ingrese el primer numero a calcular : \n"))
+numero_2 = int(input("Ingrese el segundo numero a calcular : \n"))
+simbolo = 0
+while simbolo != 7 :
+    print ("""
+    Indique la operacion a realizar:
+    1) Suma
+    2) Resta
+    3) Multiplicación
+    4) División
+    5) Exponente/Potencia
+    6) Fin (Salir)
+    """)
+    simbolo = int(input())
+    if simbolo == 1 :
+        print ("Resultado: \n" ,numero_1, "+" ,numero_2, "=", numero_1+numero_2)
+    elif simbolo == 2 :
+        print ("Resultado: \n" ,numero_1, "-" ,numero_2, "=" , numero_1-numero_2)
+    elif simbolo == 3 :
+        print ("Resultado: \n" ,numero_1, "*" ,numero_2, "=" , numero_1*numero_2)
+    elif simbolo == 4 :
+        print ("Resultado: \n" ,numero_1, "/" ,numero_2, "=" , float(numero_1/numero_2))
+    elif simbolo == 5 :
+        print ("Resultado: \n" ,numero_1, "La potencia" ,numero_2, "=" , numero_1**numero_2)
+    elif simbolo == 6 :
+        print ("Gracias por usar la calculadora")
+        break
+    else : 
+        print ("Error")
+
+
+
+
+

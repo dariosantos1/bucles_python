@@ -48,11 +48,32 @@ cantidad_ausentes = 0   # Aquí debe contar cuantos ausentes hubo
 
 # Realice aquí el bucle para recorrer todas las notas
 # y cacular la sumatoria
+for nota in notas :
+    if nota >= 0 :
+        sumatoria = nota + sumatoria
+        cantidad_notas += 1
+    else :
+        cantidad_ausentes +=1
+
+
 
 # Terminado el bucle calcule el promedio como
 # promedio = sumatoria / cantidad_notas
-
+promedio = sumatoria / cantidad_notas
 # Utilice la nota promedio calculada y transformela
 # a calificación con letras, imprima en pantalla el resultado
-
+if promedio >= 90 and promedio <= 100 :
+    print (promedio, "Su calificacion es un A")
+elif promedio >= 80 and promedio <= 89 :
+    print (promedio, "Su calificacion es un B")
+elif promedio >= 70 and promedio <= 79 :
+    print (promedio, "Su calificacion es un C")
+elif promedio >= 60 and promedio <= 69:
+    print (promedio, "Su calificacion es un D")
+elif promedio < 60 :
+    print (promedio, "Su calificacion es un F")
+else :
+    print ("Error")
 # Imprima en pantalla al cantidad de ausentes
+print ("La cantidad de días de ausencias es de" ,cantidad_ausentes)
+
